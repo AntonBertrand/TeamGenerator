@@ -11,7 +11,7 @@ export class AppComponent {
   members: string[] = [];
   errorMessage = "";
   numberOfTeams: number |"" = "";
-  teams: string[] [] = []
+  teams: string[] [] = [];
 
   onInput(member: string) {
     this.newMemberName = member;
@@ -47,6 +47,8 @@ generateTeams() {
     return;
   }
 
+  this.teams = [];
+
   this.errorMessage = "";
   const allMembers = [...this.members]
 
@@ -70,5 +72,6 @@ generateTeams() {
   this.numberOfTeams = "";
 
 }
+
 
 }
