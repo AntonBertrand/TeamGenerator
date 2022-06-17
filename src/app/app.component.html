@@ -1,11 +1,20 @@
 <div class="container">
   <div class="ui card">
     <h1>Team Generator</h1>
+    
+    <div class="instructions">
+      <li>1) Simply type a name into the the name field and click add.</li>
+      <li>2) Repeat until you have added all desired names into the list.</li>
+      <li>3) Then enter the number of teams you want to create.</li>
+      <li>4) Click Generate!</li>
+    </div>
+    
     <ul class="list">
       <li *ngFor="let member of members">{{member}}</li>
     </ul>
     
     <div class="add-members-container">
+
       <input 
       #addMemberInput
       type="text" 

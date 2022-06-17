@@ -6,6 +6,7 @@
   
   h1 {
     font-size: 3rem;
+    text-align: center;
   }
   
   .list {
@@ -64,6 +65,11 @@
       list-style: none;
       font-size: 1.25rem;
       margin-bottom: 00.5rem;
+  }
+
+  .instructions {
+    padding: 2rem;
+    text-align: center;
   }
 
 
